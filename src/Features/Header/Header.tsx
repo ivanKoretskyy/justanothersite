@@ -12,7 +12,7 @@ class Header extends React.Component<HeaderProps, HeaderState> {
 
   render() { 
     return (
-      <div> header</div>
+      <div>Just another site</div>
     );
   }
 }

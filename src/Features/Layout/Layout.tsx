@@ -3,6 +3,7 @@ import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 
 import s from './Layout.module.scss';
+import Main from '../Main/Main';
 
 export interface LayoutProps {
 }
@@ -17,7 +18,7 @@ class Layout extends React.Component<LayoutProps, LayoutState> {
     return (
       <div className={s.layout}>
         <Header />
-        layout
+        <Main/>
         <Footer />
       </div>
     );
