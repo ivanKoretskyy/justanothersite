@@ -1,5 +1,7 @@
 import React from 'react';
 
+import s from './Header.module.scss';
+
 export interface HeaderProps {
   
 }
@@ -12,7 +14,11 @@ class Header extends React.Component<HeaderProps, HeaderState> {
 
   render() { 
     return (
-      <div>Just another site</div>
+      <div className={s.header}>
+        <div>menu</div>
+        <div className={s.headerTitle}>just another site</div>
+        <div>enough</div>
+      </div>
     );
   }
 }
