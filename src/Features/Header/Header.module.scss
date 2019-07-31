@@ -4,8 +4,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid grey;
 }
 
 .headerTitle {
-  @include underline()
+  @include underline();
+  cursor: pointer;
 }

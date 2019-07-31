@@ -1,11 +1,11 @@
 
-@mixin underline {
+@mixin underline ($left: -10%, $width: 120%){
   position: relative;
     &:after {
       content: '';
       position: absolute;
       top: 100%;
-      left: -10%;
+      left: $left;
       width: 0;
       height: 1px;
       background-color: black;
@@ -13,7 +13,7 @@
     }
     &:hover {
       &:after {
-        width: 120%;
+        width: $width;
       }
     }
 };

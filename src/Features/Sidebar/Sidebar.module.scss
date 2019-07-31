@@ -1,0 +1,40 @@
+@import "../../styles/_mixin.scss";
+
+.SidebarContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #58687c;
+  background-color: rgba($color: #ffffff, $alpha: 0.5)
+}
+
+.NavigationItem {
+  margin: 0;
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  align-items: center;
+}
+
+.NavigationItem a {
+  padding: 10px 10px;
+  margin: 5px 0;
+  display: block;
+  text-decoration: none;
+  font-weight: bold;
+  color: #58687c;
+  font-size: 14px;
+}
+.NavigationItem {
+  @include underline(0%, 100%);
+}
+
+.NavigationItem a.active {
+  @include underline(0%, 100%);
+}
+.NavigationItems {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
